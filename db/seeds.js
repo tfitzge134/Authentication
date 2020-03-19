@@ -1,7 +1,7 @@
 // Require the Job model
 const Job = require('./models/job_model')
 // Require the data
-const seedData = require('./seeds.json')
+const seedData = require('../db/seeds.json')
 
 // Delete any existing documents in the jobs collection
 Job.deleteMany()

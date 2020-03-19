@@ -1,4 +1,4 @@
-const mongoose = require('../connections');
+const mongoose = require('../connections')
 
 const jobSchema = new mongoose.Schema(
   {
