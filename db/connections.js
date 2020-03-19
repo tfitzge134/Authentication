@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // Use a ternary that looks for the presence of a `NODE_ENV` environmental variable
-// If `NODE_ENV` is set to `production`, use the URI for our database stored in the
+// If `NODE_ENV` is set to production, use the URI for our database store in the
 // `MONGODB_URI` environmental variable.  If not, just use the local db address.
 const mongoURI =
   process.env.NODE_ENV === 'production'
@@ -10,7 +10,7 @@ const mongoURI =
     : 'mongodb://localhost/job-board';
 
 // Use Mongoose's connect method to connect to MongoDB by passing it the db URI.
-// Pass a second argument which is an object with the options for the connection.
+// Pass a second argument which is an object storing the options for the connection.
 mongoose
   .connect(mongoURI, {
     useNewUrlParser: true,
